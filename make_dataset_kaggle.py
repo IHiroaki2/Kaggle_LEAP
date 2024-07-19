@@ -14,7 +14,7 @@ from config import CFG
 for i in range(0, 10):
     print(i)
     
-    df = np.concatenate([pd.read_parquet(f"{CFG.MAIN_FOLDER}data/data_{k}_{i}.parquet").to_numpy() for k in range(17)], axis=1) 
+    df = np.concatenate([pd.read_parquet(f"data/data_{k}_{i}.parquet").to_numpy() for k in range(17)], axis=1) 
 
     tmp_dataset = tf.data.Dataset.from_tensor_slices((df))
 
