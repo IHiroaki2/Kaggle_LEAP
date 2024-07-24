@@ -12,32 +12,32 @@ If you run into any trouble with the setup/code or have any questions please con
 export KAGGLE_CONFIG_DIR=[directory of kaggle.json]  
 cd [your LEAP directory]  
 #### make directory & Download of kaggle data  
-'''zsh
+'''
 ./preparation.sh  
 '''
 
 ## make dataset (tfrecord) 
-'''zsh
+'''
 python data_splitting.py  
 '''
-'''zsh
+'''
 python make_dataset_kaggle.py  
 '''
 
 #### ※ If you want to add additional data  
 ##### ~~ https://leap-stc.github.io/ClimSim/dataset.html  
-'''zsh
+'''
 python download_from_hf.py  
 '''
-'''zsh
+'''
 python make_dataset_hf.py  　
 '''
 ## For training  
 #### Adjust parameters in config.py  
-'''zsh
+'''
 python training.py  
 '''
 #### Enter the path of the trained model in config.py(pred_model_filepath) 
-'''zsh
+'''     
 python inference.py  
 '''
