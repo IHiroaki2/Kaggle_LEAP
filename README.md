@@ -10,7 +10,7 @@ If you run into any trouble with the setup/code or have any questions please con
 
 ## DATA SETUP (assumes the [Kaggle API](https://github.com/Kaggle/kaggle-api) is installed)  
 ```
-export KAGGLE_CONFIG_DIR=[directory of kaggle.json]  s
+export KAGGLE_CONFIG_DIR=[directory of kaggle.json]
 cd [your LEAP directory]  
 ```
 #### make directory & Download of kaggle data  
